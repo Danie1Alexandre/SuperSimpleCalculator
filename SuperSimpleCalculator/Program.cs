@@ -18,7 +18,7 @@ namespace SuperSimpleCalculator
                 Console.WriteLine("\t3 - Multiply");
                 Console.WriteLine("\t4 - Divide");
                 Console.WriteLine("\t5 - Quit");
-                while (true)//testing valid option
+                while (true)//testing valid option!=)
                 {
                     switchNumber = GetNumber();
                     if ((switchNumber <= 5) && (switchNumber >= 1))
