@@ -21,11 +21,11 @@ namespace SuperSimpleCalculator
                 while (true)//testing valid option
                 {
                     switchNumber = GetNumber();
-                    if (switchNumber <= 5)
+                    if ((switchNumber <= 5) && (switchNumber >= 0))
                     {
                         break;
                     }
-                    Console.WriteLine("not a valid option, use number 1-5");
+                    Console.WriteLine("not a valid option, use number 1-4 to calculate or 5 to quit");
                 }
                 if (switchNumber == 5)//Shut down program
                 {
@@ -40,13 +40,13 @@ namespace SuperSimpleCalculator
                 {
 
                     case 1: //add
-                        Console.WriteLine($"Resultat: {num1} + {num2} = " + (num1 + num2));
+                        Console.WriteLine($"Resultat: {num1} + {num2} = " + (add(num1, num2)));
                         break;
                     case 2: //sub
-                        Console.WriteLine($"Resultat: {num1} - {num2} = " + (num1 - num2));
+                        Console.WriteLine($"Resultat: {num1} - {num2} = " + (sub(num1, num2)));
                         break;
                     case 3: //multiply
-                        Console.WriteLine($"Resultat: {num1} * {num2} = " + (num1 * num2));
+                        Console.WriteLine($"Resultat: {num1} * {num2} = " + (multiply(num1, num2)));
                         break;
                     case 4://Divide
                         while (num2 == 0)
@@ -54,7 +54,10 @@ namespace SuperSimpleCalculator
                             Console.WriteLine("Can not divide by zero, Enter a non-zero divisor: ");
                             num2 = GetNumber();
                         }
-                        Console.WriteLine($"Resultat: {num1} / {num2} = " + (num1 / num2));
+                        Console.WriteLine($"Resultat: {num1} / {num2} = " + (Divide(num1, num2)));
+                        break;
+                    default:
+                        Console.WriteLine("Not a vaild option try again");
                         break;
                 }
 
@@ -75,7 +78,22 @@ namespace SuperSimpleCalculator
             }
             return num1;
         }
-
+        static double add (double arg1, double arg2)
+        {
+            return arg1 + arg2;
+        }
+        static double sub (double arg1, double arg2)
+        {
+            return arg1 - arg2;
+        }
+        static double multiply (double arg1, double arg2)
+        {
+            return arg1 * arg2;
+        }
+        static double Divide (double arg1, double arg2)
+        {
+            return arg1 / arg2;
+        }
     }
 }
 
