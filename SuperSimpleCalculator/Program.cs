@@ -21,7 +21,7 @@ namespace SuperSimpleCalculator
                 while (true)//testing valid option
                 {
                     switchNumber = GetNumber();
-                    if ((switchNumber <= 5) && (switchNumber >= 0))
+                    if ((switchNumber <= 5) && (switchNumber >= 1))
                     {
                         break;
                     }
