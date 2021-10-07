@@ -3,7 +3,7 @@ using System;
 
 namespace SuperSimpleCalculator
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -78,19 +78,19 @@ namespace SuperSimpleCalculator
             }
             return num1;
         }
-        static double add (double arg1, double arg2)
+        public static double add (double arg1, double arg2)
         {
             return arg1 + arg2;
         }
-        static double sub (double arg1, double arg2)
+        public static double sub (double arg1, double arg2)
         {
             return arg1 - arg2;
         }
-        static double multiply (double arg1, double arg2)
+        public static double multiply (double arg1, double arg2)
         {
             return arg1 * arg2;
         }
-        static double Divide (double arg1, double arg2)
+        public static double Divide (double arg1, double arg2)
         {
             return arg1 / arg2;
         }
