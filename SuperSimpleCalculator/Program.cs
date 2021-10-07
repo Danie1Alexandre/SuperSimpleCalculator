@@ -40,13 +40,13 @@ namespace SuperSimpleCalculator
                 {
 
                     case 1: //add
-                        Console.WriteLine($"Resultat: {num1} + {num2} = " + (add(num1, num2)));
+                        Console.WriteLine($"Resultat: {num1} + {num2} = " + (Add(num1, num2)));
                         break;
                     case 2: //sub
-                        Console.WriteLine($"Resultat: {num1} - {num2} = " + (sub(num1, num2)));
+                        Console.WriteLine($"Resultat: {num1} - {num2} = " + (Sub(num1, num2)));
                         break;
                     case 3: //multiply
-                        Console.WriteLine($"Resultat: {num1} * {num2} = " + (multiply(num1, num2)));
+                        Console.WriteLine($"Resultat: {num1} * {num2} = " + (Multiply(num1, num2)));
                         break;
                     case 4://Divide
                         while (num2 == 0)
@@ -78,15 +78,15 @@ namespace SuperSimpleCalculator
             }
             return num1;
         }
-        public static double add (double arg1, double arg2)
+        public static double Add (double arg1, double arg2)
         {
             return arg1 + arg2;
         }
-        public static double sub (double arg1, double arg2)
+        public static double Sub (double arg1, double arg2)
         {
             return arg1 - arg2;
         }
-        public static double multiply (double arg1, double arg2)
+        public static double Multiply (double arg1, double arg2)
         {
             return arg1 * arg2;
         }
