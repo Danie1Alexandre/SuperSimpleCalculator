@@ -8,7 +8,7 @@ namespace SuperSimpleCalculator
         static void Main(string[] args)
         {
             double num1, num2, switchNumber;
-            while(true)
+            while (true)
             {
                 Console.WriteLine("\nSuper Simple Calculator");
                 Console.WriteLine("-----------------------");
@@ -78,23 +78,47 @@ namespace SuperSimpleCalculator
             }
             return num1;
         }
-        public static double Add (double arg1, double arg2)
+       
+        public static double Add(double arg1, double arg2)
         {
             return arg1 + arg2;
         }
-        public static double Sub (double arg1, double arg2)
+       
+        public static double Add(double[] arrayNumbers)
+        {
+            double result = 0;
+            for (int i = 0; i < 4; i++) //add arry of nummbers
+            {
+               result = arrayNumbers[i] + result;
+            }
+
+            return result;
+        }
+
+
+        public static double Sub(double arg1, double arg2)
         {
             return arg1 - arg2;
         }
-        public static double Multiply (double arg1, double arg2)
+
+        public static double Sub(double[] arrayNumbers)
+        {
+            double result = 0;
+            for (int i = 0; i < 4; i++) //add arry of nummbers
+            {
+                result -= arrayNumbers[i];
+            }
+
+            return result;
+        }
+
+        public static double Multiply(double arg1, double arg2)
         {
             return arg1 * arg2;
         }
-        public static double Divide (double arg1, double arg2)
+        public static double Divide(double arg1, double arg2)
         {
             return arg1 / arg2;
         }
     }
 }
-
-   
