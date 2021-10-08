@@ -87,7 +87,7 @@ namespace SuperSimpleCalculator
         public static double Add(double[] arrayNumbers)
         {
             double result = 0;
-            for (int i = 0; i < 4; i++) //add arry of nummbers
+            for (int i = 0; i < 4; i++) 
             {
                result = arrayNumbers[i] + result;
             }
@@ -104,7 +104,7 @@ namespace SuperSimpleCalculator
         public static double Sub(double[] arrayNumbers)
         {
             double result = 0;
-            for (int i = 0; i < 4; i++) //add arry of nummbers
+            for (int i = 0; i < 4; i++) 
             {
                 result -= arrayNumbers[i];
             }

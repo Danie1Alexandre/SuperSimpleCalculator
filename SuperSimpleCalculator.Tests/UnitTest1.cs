@@ -1,3 +1,4 @@
+//Made by Daniel Alexandre 2021
 using System;
 using Xunit;
 using SuperSimpleCalculator;
@@ -34,11 +35,11 @@ namespace SuperSimpleCalculator.Tests
         [Fact]
         public void AddTests()
         {
-            double[] nummberList = new double[] { 100, 10, 20, 5 };
+            double numberA = 110, numberB = 35;
             double result, expected;
 
-            result = Program.Add(nummberList[0], nummberList[1]);//add two nummbers
-            expected = 110;
+            result = Program.Add(numberA, numberB);//add two nummbers
+            expected = 145;
             Assert.Equal(expected, result);
 
         }
@@ -46,11 +47,11 @@ namespace SuperSimpleCalculator.Tests
         [Fact]
         public void SubTests()
         {
-            double[] nummberList = new double[] { 100, 10, 20, 5 };
+            double numberA = 100, numberB = 10;
             double result, expected;
 
             expected = 90;
-            result = Program.Sub(nummberList[0], nummberList[1]);
+            result = Program.Sub(numberA, numberB);
 
             Assert.Equal(expected, result);
 
@@ -88,19 +89,3 @@ namespace SuperSimpleCalculator.Tests
     }
 }
 
-/*[Theory] //add with theory altenativ way maybe not so good
-[InlineData(1, 2, 4, 5)]
-public void AddTests2(double a, double b, double c, double d, )
-{
-    double expected, result;
-    double[] nummberList = new double[] { a, b, c, d };
-    result = 0;
-    for (int i = 0; i < 4; i++) //add arry of nummbers
-    {
-        result = Program.Add(nummberList[i], result);
-    }
-    expected = 12;
-    Assert.Equal(expected, result);
-    result = Program.Add(nummberList[0], nummberList[1]);//add two nummbers
-    expected = 3;
-    Assert.Equal(expected, result);*/
