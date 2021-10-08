@@ -86,8 +86,11 @@ namespace SuperSimpleCalculator
        
         public static double Add(double[] arrayNumbers)
         {
+            int arrayLenght;
+            arrayLenght = arrayNumbers.Length;
+
             double result = 0;
-            for (int i = 0; i < 4; i++) 
+            for (int i = 0; i < arrayLenght; i++) 
             {
                result = arrayNumbers[i] + result;
             }

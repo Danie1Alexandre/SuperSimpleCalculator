@@ -17,13 +17,13 @@ namespace SuperSimpleCalculator.Tests
         }
 
         [Theory] //add array with theory
-        [InlineData(1, 2, 4, 5, 12)]
-        [InlineData(7, 2, 4, 5, 18)]
+        [InlineData(1, 2, 4, 5, 7, 19)]
+        [InlineData(7, 2, 4, 5, 7, 25)]
 
-        public void AddTestsArray(double a, double b, double c, double d, double expected)
+        public void AddTestsArray(double a, double b, double c, double d, double e, double expected)
         {
             double result;
-            double[] nummberList = new double[] { a, b, c, d };
+            double[] nummberList = new double[] { a, b, c, d , e};
 
             result = Program.Add(nummberList);
           
